@@ -1,18 +1,33 @@
 import React from "react";
 import { Typography } from "@mui/material";
-import styles from "../styles/home.module.scss";
+import Layout from "../layout/layout";
+import HeroHeader from "../components/HeroHeader/HeroHeader";
+import Snacks from "../components/Snacks/Snacks";
+import DiscountPromo from "../components/DiscountPromo/DiscountPromo";
+import BestTasted from "../components/BestTasted/BestTasted";
+import BestMenu from "../components/BestMenu/BestMenu";
+import ServesYou from "../components/ServesYou/ServesYou";
+import FoodByPhone from "../components/FoodByPhone/FoodByPhone";
+import CustomerReview from "../components/CustomerReview/CustomerReview";
+import SpecialOffer from "../components/SpecialOffer/SpecialOffer";
+import OurNewsAndArticle from "../components/OurNewsAndArticle/OurNewsAndArticle";
+import ExclusiveUpdate from "../components/ExclusiveUpdate/ExclusiveUpdate";
 
 const Home = () => {
   return (
-    <div>
-      <Typography variant="h1">HELLO</Typography>
-      <Typography variant="h2">HELLO</Typography>
-      <Typography variant="h3">HELLO</Typography>
-      <Typography variant="h4">HELLO</Typography>
-      <Typography variant="h5">HELLO</Typography>
-      <Typography variant="h6">HELLO</Typography>
-      <Typography variant="body1">Search</Typography>
-    </div>
+    <Layout>
+      <HeroHeader />
+      <Snacks />
+      <DiscountPromo />
+      <BestTasted />
+      <BestMenu />
+      <ServesYou />
+      <FoodByPhone />
+      <CustomerReview />
+      <SpecialOffer />
+      <OurNewsAndArticle />
+      <ExclusiveUpdate />
+    </Layout>
   );
 };
 

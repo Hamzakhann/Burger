@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.tasted_container {
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 6rem;
+  .tasted_img_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    img {
+      border-radius: 10px 10px 10px 10px !important;
+    }
+  }
+  .tasted_content_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    h2 {
+      color: $global-color-secondary;
+    }
+    p {
+      color: $global-color-0eabca8;
+    }
+    .prices_container {
+      width: 100%;
+      padding: 2rem 0;
+      .prices {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+    .btn_container {
+      width: 100%;
+      button {
+        width: 100%;
+        height: 55px;
+        max-width: 180px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .tasted_container {
+    .tasted_img_container {
+      min-height: 50vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tasted_container {
+    max-width: 100%;
+    padding: 0 1rem 4rem 1rem;
+    .tasted_img_container {
+      min-height: 30vh;
+    }
+  }
+}

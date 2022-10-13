@@ -1,0 +1,136 @@
+@import "../../styles/variables.scss";
+
+.best_menu_container {
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 6rem;
+  .best_menu_header_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: $global-color-secondary;
+    }
+    .best_menu_header_description {
+      color: $global-color-0eabca8;
+      max-width: 50%;
+      margin: auto auto 2rem auto;
+      text-align: center;
+    }
+    .best_menu_tabs_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      .tabs {
+        width: 100%;
+        max-width: 150px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $global-color-8030830;
+        border-radius: 10px 10px 10px 10px;
+        cursor: pointer;
+        p {
+          color: $global-color-secondary;
+        }
+      }
+      .tabs_active {
+        width: 100%;
+        max-width: 150px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 40px 16px 40px;
+        background-color: $global-color-897cb8d;
+        border-radius: 10px 10px 10px 10px;
+        cursor: pointer;
+        p {
+          color: $global-color-primary;
+        }
+      }
+    }
+  }
+  .best_menu_card_container {
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    .best_menu_card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      .best_menu_card_image_container {
+        width: 100%;
+        height: 100%;
+        // min-height: 280px;
+        min-width: 200px;
+        padding: 3rem 2rem;
+        background: $global-color-8030830;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      .best_menu_card_content_container {
+        width: 100%;
+        height: 100%;
+        .best_menu_card_title {
+          color: $global-color-secondary;
+        }
+        .best_menu_card_description {
+          padding: 1.5rem 0;
+          color: $global-color-0eabca8;
+        }
+        .best_menu_card_price {
+          color: $global-color-accent;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .best_menu_container {
+    .best_menu_header_container {
+      .best_menu_header_description {
+        max-width: 100%;
+      }
+      .best_menu_tabs_container {
+        flex-direction: column;
+        gap: 1rem;
+        .tabs {
+          max-width: 100%;
+        }
+        .tabs_active {
+          max-width: 100%;
+        }
+      }
+    }
+    .best_menu_card_container {
+      .best_menu_card {
+        .best_menu_card_image_container {
+          min-height: 380px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .best_menu_container {
+    max-width: 100%;
+    padding: 0 1rem 4rem 1rem;
+  }
+}

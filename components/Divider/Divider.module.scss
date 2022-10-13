@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.divider {
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  padding: 2rem 0;
+  hr {
+    height: 3px;
+    background: $global-color-897cb8d;
+    color: $global-color-897cb8d;
+  }
+}

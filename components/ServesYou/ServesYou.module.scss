@@ -1,0 +1,76 @@
+@import "../../styles/variables.scss";
+
+.serves_you_container {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  .video_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    video {
+      width: 100%;
+      max-width: 1800px;
+      height: 582px;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #000000;
+      opacity: 0.7;
+    }
+  }
+  .serves_you_content_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 4rem 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .play_button_container {
+      width: 65px;
+      height: 65px;
+      background: $global-color-897cb8d;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: $global-color-secondary;
+    }
+    p {
+      color: $global-color-0eabca8;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .serves_you_container {
+    .serves_you_content_container {
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

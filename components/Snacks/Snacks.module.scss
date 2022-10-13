@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+
+.snacks_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 6rem;
+  .primary {
+    background: $global-color-897cb8d;
+    .buy_online {
+      color: $global-color-primary;
+    }
+  }
+  .secondary {
+    background: $global-color-230929w;
+    .buy_online {
+      color: $global-color-accent;
+    }
+  }
+  .danger {
+    background: $global-color-0823032;
+    .buy_online {
+      color: $global-color-accent;
+    }
+  }
+  .snacks_bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem 0 1rem 0;
+    border-radius: 10px 10px 10px 10px;
+    h4 {
+      color: $global-color-secondary;
+      margin-bottom: 0.2rem;
+    }
+    p {
+      color: $global-color-secondary;
+      cursor: pointer;
+    }
+    .description {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .snacks_container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .snacks_container {
+    max-width: 100%;
+    padding: 0 1rem 3rem 1rem;
+  }
+}

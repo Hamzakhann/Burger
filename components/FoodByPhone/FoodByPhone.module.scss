@@ -1,0 +1,99 @@
+@import "../../styles/variables.scss";
+
+.food_by_phone_container {
+  width: 100%;
+  height: 100%;
+  padding: 8rem 0;
+  max-width: 80%;
+  margin: auto;
+  .socials_store_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .food_by_phone_img_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .food_by_phone_content_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    h2 {
+      color: $global-color-secondary;
+    }
+    p {
+      color: $global-color-0eabca8;
+    }
+    .special_tags_container {
+      width: 100%;
+      height: auto;
+      max-width: 470px;
+      padding: 2rem 0 4rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      .special_tags {
+        width: 100%;
+        height: auto;
+        background: $global-color-8030830;
+        padding: 1.5rem;
+        border-radius: 10px 10px 10px 10px;
+        display: flex;
+        gap: 1.5rem;
+        .special_tags_img {
+          padding: 1rem;
+          background: $global-color-897cb8d;
+          border-radius: 10px 10px 10px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .special_tags_content {
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
+          justify-content: center;
+          h3 {
+            color: $global-color-secondary;
+          }
+          p {
+            color: $global-color-0eabca8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .food_by_phone_container {
+    padding: 6rem 0;
+    .food_by_phone_content_container {
+      .special_tags_container {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .food_by_phone_container {
+    max-width: 100%;
+    padding: 4rem 1rem;
+    .food_by_phone_content_container {
+      .special_tags_container {
+        max-width: 100%;
+      }
+    }
+  }
+}
