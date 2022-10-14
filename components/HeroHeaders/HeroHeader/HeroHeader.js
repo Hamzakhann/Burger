@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Divider, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import { PrimaryButton } from "../Buttons/Buttons";
+import { PrimaryButton } from "../../Buttons/Buttons";
 import styles from "./HeroHeader.module.scss";
 import { faDroplet, faUtensils } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,0 +1,63 @@
+@import "../../../styles/variables.scss";
+
+.about_hero_header_container {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0 12rem 0;
+  min-height: 453px;
+  background: url("../../../public/images/about_hero_1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #000000b3 0%, #000000 100%);
+    opacity: 1;
+    z-index: 0;
+  }
+  .about_hero_header_content_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: $global-color-secondary;
+      z-index: 10;
+    }
+    p {
+      max-width: 40%;
+      text-align: center;
+      color: $global-color-0eabca8;
+      z-index: 10;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about_hero_header_container {
+    padding: 10rem 1rem 8rem 1rem;
+    .about_hero_header_content_container {
+      p {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about_hero_header_container {
+    .about_hero_header_content_container {
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}

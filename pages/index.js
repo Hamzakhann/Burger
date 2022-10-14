@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import Layout from "../layout/layout";
-import HeroHeader from "../components/HeroHeader/HeroHeader";
 import Snacks from "../components/Snacks/Snacks";
 import DiscountPromo from "../components/DiscountPromo/DiscountPromo";
 import BestTasted from "../components/BestTasted/BestTasted";
@@ -12,6 +11,7 @@ import CustomerReview from "../components/CustomerReview/CustomerReview";
 import SpecialOffer from "../components/SpecialOffer/SpecialOffer";
 import OurNewsAndArticle from "../components/OurNewsAndArticle/OurNewsAndArticle";
 import ExclusiveUpdate from "../components/ExclusiveUpdate/ExclusiveUpdate";
+import HeroHeader from "../components/HeroHeaders/HeroHeader/HeroHeader";
 
 const Home = () => {
   return (

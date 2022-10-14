@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.our_health_container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 8rem;
+  max-width: 80%;
+  margin: auto;
+  .our_health {
+    width: 100%;
+    height: 100%;
+    background: $global-color-8030830;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .health_by_percentage {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.3rem;
+      h4 {
+        color: $global-color-secondary;
+      }
+    }
+    p {
+      color: $global-color-0eabca8;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .our_health_container {
+    max-width: 100%;
+    padding: 0 1rem 4rem 1rem;
+  }
+}

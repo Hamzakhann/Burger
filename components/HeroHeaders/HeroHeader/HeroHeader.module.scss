@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
 @keyframes float {
   0% {
@@ -16,7 +16,7 @@
   width: 100%;
   height: 100%;
   padding: 10rem 0 8rem 0;
-  background: url("../../public/images/hero_bg.jpeg");
+  background: url("../../../public/images/hero_bg.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
