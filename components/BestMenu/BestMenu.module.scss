@@ -39,8 +39,15 @@
         background-color: $global-color-8030830;
         border-radius: 10px 10px 10px 10px;
         cursor: pointer;
+        transition: 0.2s all;
         p {
           color: $global-color-secondary;
+        }
+        &:hover {
+          background-color: $global-color-897cb8d;
+          p {
+            color: $global-color-primary;
+          }
         }
       }
       .tabs_active {
@@ -82,6 +89,16 @@
         align-items: center;
         border-radius: 30px;
         cursor: pointer;
+        transition: 0.2s all;
+        &:hover {
+          background-color: $global-color-897cb8d;
+        }
+        img {
+          transition: 0.2s all;
+          &:hover {
+            scale: 1.1;
+          }
+        }
       }
       .best_menu_card_content_container {
         width: 100%;

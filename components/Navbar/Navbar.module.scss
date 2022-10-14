@@ -28,6 +28,9 @@
       &:active {
         scale: 0.95;
       }
+      &:hover {
+        color: $global-color-897cb8d;
+      }
     }
   }
 }

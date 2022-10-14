@@ -67,20 +67,24 @@ const FoodByPhone = () => {
               </div>
             </div>
             <div className={styles.socials_store_container}>
-              <Image
-                src="/images/apple_store.png"
-                alt="apple store"
-                width={169}
-                height={57}
-                objectFit="contain"
-              />{" "}
-              <Image
-                src="/images/google_play.png"
-                alt="apple store"
-                width={183}
-                height={56}
-                objectFit="contain"
-              />
+              <div className={styles.img_container}>
+                <Image
+                  src="/images/apple_store.png"
+                  alt="apple store"
+                  width={169}
+                  height={57}
+                  objectFit="contain"
+                />{" "}
+              </div>
+              <div className={styles.img_container}>
+                <Image
+                  src="/images/google_play.png"
+                  alt="apple store"
+                  width={183}
+                  height={56}
+                  objectFit="contain"
+                />
+              </div>
             </div>
           </div>
         </Grid>
