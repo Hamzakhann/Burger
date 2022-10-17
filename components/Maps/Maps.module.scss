@@ -1,0 +1,13 @@
+.maps_container {
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .maps_container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}

@@ -5,6 +5,7 @@
   height: 100%;
   max-width: 80%;
   margin: auto;
+  padding: 8rem 0;
   .best_chef_content_container {
     width: 100%;
     height: 100%;
@@ -18,10 +19,89 @@
     }
     p {
       color: $global-color-0eabca8;
+      max-width: 60%;
+      text-align: center;
     }
   }
   .best_chef_card_container {
     width: 100%;
     height: 100%;
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      &:hover .best_chef_content {
+        display: block;
+      }
+      .best_chef_card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        // min-height: 54vh;
+        min-height: 500px;
+        img {
+          border-radius: 8px !important;
+        }
+      }
+      .best_chef_content {
+        display: none;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(black, 0.7);
+        .tag {
+          position: absolute;
+          right: 2rem;
+          top: 2rem;
+          p {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            color: $global-color-secondary;
+          }
+        }
+        .title {
+          position: absolute;
+          bottom: 2rem;
+          left: 2rem;
+          h4 {
+            color: $global-color-secondary;
+          }
+        }
+        .social_links {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          position: absolute;
+          right: 2rem;
+          bottom: 3rem;
+          .link {
+            width: 30px;
+            height: 30px;
+            background: $global-color-897cb8d;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .best_chef_container {
+    max-width: 100%;
+    padding: 4rem 1rem;
+    .best_chef_content_container {
+      p {
+        max-width: 100%;
+      }
+    }
   }
 }
